@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Desafio Sapeka</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+           
+
+    <link rel="stylesheet" type="text/css" media="screen" href="molduras.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-lg-12">
+                    <a href="index.html"><img class="mx-auto d-block topo" src="imagens/sapeka.png"></a><br>
+                <img class="mx-auto d-block topomolduras" src="pagina3/topo.png"><br>
+             </div>
+
+            <div class="col-sm-12 col-lg-12">
+                    <p class="text-center titulo "><b>Desafio 0 a 6 meses</b></p>
+                    <p class="text-center"><b>Envie fotos do seu bebê realizando as seguintes atividades:</b></p>
+            </div>
+    
+        </div> <!--fim row sessao1-->
+    </div>
+    <div class="container-fluid">
+
+            <div class="row">
+                    
+                <div class="col-6 frame1">
+                    <input type="file" class="btn btn-primary" name="arquivo" id="foto1" onchange="preview(this);">
+                    <img class="moldurateste1" src="pagina3/frame1.png">
+                    <div class="preview-imgg">
+                        <img class="preview_image" alt="" src="" >
+                    </div>
+                </div>
+                   
+                    <div class="col-6 frame2">
+                          <!--  <img class="moldura" src="pagina3/frame2.png"> -->
+                          <input type="file" class="btn btn-primary" name="arquivo" id="foto1" onchange="preview(this);">
+                            <img class="moldurateste2" src="pagina3/frame2.png">
+                            <div class="preview-img">
+                                <img class="preview_image" alt="" src="">
+                            </div>
+                    </div>
+                   
+                   <div class="col-6 frame3">
+                        <!-- <img class="moldura float-right" src="pagina3/frame3.png"> -->
+                        <input type="file" class="btn btn-primary" name="arquivo" id="foto1" onchange="preview(this);">
+                            <img class="moldurateste3" src="pagina3/frame3.png">
+                            <div class="preview-img">
+                                <img class="preview_image" alt="" src="">
+                            </div>
+                    </div>
+
+                    <div class="col-6 frame4">
+                           <!-- <img class="moldura" src="pagina3/fram4.png"> -->
+                           <input type="file" class="btn btn-primary" name="arquivo" id="foto1" onchange="preview(this);">
+                            <img class="moldurateste4" src="pagina3/fram4.png">
+                            <div class="preview-img">
+                                <img class="preview_image" alt="" src="">
+                             </div>
+                    </div>
+                
+            </div><!--fim row-->
+    
+                <div class="col-12">
+                        <a href="#"><img class="mx-auto d-block btnparticipar" src="pagina3/botcompartilhar.png"></a><br>           
+                </div>
+    </div><!--fim container-->
+
+<!--javascript-->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script >// Affiche l'image
+        function preview(input) {
+    if (input.files && input.files[0]) {
+        var reader = new FileReader();
+
+        reader.onload = function (e) {
+            $(input).closest('.col-6').find('img.preview_image')
+                .attr('src', e.target.result)
+                .width(300)
+                .height(300)
+        };
+        reader.readAsDataURL(input.files[0]);
+    }
+}   
+    </script>
+
+</body>
+</html>

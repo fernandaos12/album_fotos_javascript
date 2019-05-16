@@ -1,0 +1,327 @@
+@font-face {
+    font-family: "VAGRoundedStd-Light";
+    src: url('fontes/VAGRoundedStd-Light.otf');
+  }
+  
+  .subtitulo3{
+    font-size: 20px;
+  }
+  
+  .whatsapp-share-button{
+    display: inline-block;            
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    background-size: 100% 100%; /* ou 'contain' */
+     background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: -5px;
+  }
+  .fab{
+    font-size: 40px !important;
+  }
+  .social{
+      display: flex;
+  }
+  .fa-whatsapp-square{
+  color:#439c77 !important;
+  padding-right: 5px;
+  }
+  .fas{
+    color: #673AB7 !important;
+    padding-left: 5px;
+    font-size: 35px !important;
+  }
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+  
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    .list {
+        display: flex; }
+        .list .group-image {
+          margin: 5px;
+          height: 200px;
+          width: 200px;
+          display: flex;
+          border: 1px dashed grey;
+          background-color: lightgrey;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          background-position: center;
+          background-size: cover; 
+          z-index: 1040;    
+        }
+          .list .group-image input[type=file] {
+            display: none; }
+          .list .group-image .description {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            .list .group-image .description label {
+              margin-top: 10px;
+              cursor: pointer;
+              border: 1px solid black;
+              padding: 13px;
+              border-radius: 50%;
+              z-index: 30000;
+              transition: all 100ms; }
+              .list .group-image .description span{
+                font-family: "VAGRoundedStd-Light";
+                text-align: center;
+                font-size: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+              .list .group-image .description label:hover {
+               /* background-color: rgba(8, 143, 48, 0.966);*/
+                color: black; }
+              .list .group-image .description label i {
+                font-size: 3em; }
+          .list .group-image .close {
+            display: none;
+            opacity: 0;
+            transition: 100ms;
+            border-radius: 50%; }
+            .list .group-image .close span {
+              transition: all 100ms;
+              color: red; }
+              .list .group-image .close span i {
+                font-size: 3em;
+                cursor: pointer; }
+          .list .group-image:hover .close {
+            display: flex;
+            opacity: 1; }
+        .list .afficher .description {
+          display: none; }
+        .list .afficher .close {
+          display: flex; }
+          .list .afficher .close span {
+            display: flex; }
+          }
+      
+  
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+    .imagebg3{
+        margin-top: 27px !important;
+      }
+      .imagebg4{
+        margin-top: 32px !important;
+      }
+      .social{
+        margin-left: 52px;
+    }
+      .imggroup{
+        margin-left: -17px;
+      }
+      .list {
+        display: flex;
+        margin-left: 8px;
+      }
+       /* .list .group-image {
+          margin: 5px;
+        height: 165px;
+        width: 165px;
+        display: flex;
+        border: 1px dashed grey;
+        background-color: lightgrey;
+        justify-content: center;
+        align-items: center;
+        border-radius: 5px;
+        background-position: center;
+        background-size: cover;
+        z-index: 1040;
+        margin-top: 71px;
+        
+        }*/
+    .list .group-image {
+      height: 130px;
+      width: 130px;
+      display: flex;
+      border: 1px dashed grey;
+      background-color: lightgrey;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background-position: center;
+      background-size: cover;
+      z-index: 1040;
+      margin-top: 71px;
+      margin-bottom: 16px;
+      margin-left: 16px;
+        }
+          .list .group-image input[type=file] {
+            display: none; }
+          .list .group-image .description {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            .list .group-image .description label {
+              margin-top: 10px;
+              cursor: pointer;
+              border: 1px solid black;
+              padding: 13px;
+              border-radius: 50%;
+              z-index: 30000;
+              transition: all 100ms; }
+                       .list .group-image .description label:hover {
+               /* background-color: rgba(8, 143, 48, 0.966);*/
+                color: black; }
+              .list .group-image .description label i {
+               /* font-size: 3em;*/ 
+               font-size: 19px;
+              }
+          .list .group-image .close {
+            display: none;
+            opacity: 0;
+            transition: 100ms;
+            border-radius: 50%; }
+            .list .group-image .close span {
+              transition: all 100ms;
+              color: red; }
+              .list .group-image .close span i {
+                font-size: 3em;
+                cursor: pointer; }
+          .list .group-image:hover .close {
+            display: flex;
+            opacity: 1; }
+        .list .afficher .description {
+          display: none; }
+        .list .afficher .close {
+          display: flex; }
+          .list .afficher .close span {
+            display: flex; }
+    
+      .list .group-image .description span {
+        font-family: "VAGRoundedStd-Light";
+        text-align: center;
+        font-size: 15px;
+        padding-left: 28px;
+        padding-right: 26px;
+    }
+    .list .group-image .description label {
+      margin-top: 0px;
+      cursor: pointer;
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 50%;
+      z-index: 30000;
+      transition: all 100ms;
+    }
+    list .group-image {
+      margin: 5px;
+      height: 180px;
+      width: 174px;
+      display: flex;
+      border: 1px dashed grey;
+      background-color: lightgrey;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background-position: center;
+      background-size: cover;
+      z-index: 1040;
+    }
+}
+  
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+    .btnparticipar{
+        margin-top: -50px;
+      }
+        .social{
+            margin-left: 551px;
+        }
+      .list {
+        display: flex; 
+        margin-left: 261px;
+      }
+        .list .group-image {
+         /* margin: 45px;
+          height: 200px;
+          width: 200px;
+          display: flex;
+          border: 1px dashed grey;
+          background-color: lightgrey;
+          justify-content: center;
+          align-items: center;
+          border-radius: 5px;
+          background-position: center;
+          background-size: cover;
+          z-index: 1040;
+          margin-left: 158px;  */
+          height: 200px;
+      width: 200px;
+      display: flex;
+      border: 1px dashed grey;
+      background-color: lightgrey;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+      background-position: center;
+      background-size: cover;
+      z-index: 1040;
+      margin-left: 157px;
+      margin-right: -225px;
+      margin-top: 69px;
+      margin-bottom: 47px;
+        }
+          .list .group-image input[type=file] {
+            display: none; }
+          .list .group-image .description {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; }
+            .list .group-image .description label {
+              margin-top: 10px;
+              cursor: pointer;
+              border: 1px solid black;
+              padding: 13px;
+              border-radius: 50%;
+              z-index: 30000;
+              transition: all 100ms; }
+              .list .group-image .description span{
+                font-family: "VAGRoundedStd-Light";
+                text-align: center;
+                font-size: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+              }
+              .list .group-image .description label:hover {
+                /*background-color: rgba(8, 143, 48, 0.966);*/
+                color: black; }
+              .list .group-image .description label i {
+                font-size: 3em; }
+          .list .group-image .close {
+            display: none;
+            opacity: 0;
+            transition: 100ms;
+            border-radius: 50%; }
+            .list .group-image .close span {
+              transition: all 100ms;
+              color: red; }
+              .list .group-image .close span i {
+                font-size: 3em;
+                cursor: pointer; }
+          .list .group-image:hover .close {
+            display: flex;
+            opacity: 1; }
+        .list .afficher .description {
+          display: none; }
+        .list .afficher .close {
+          display: flex; }
+          .list .afficher .close span {
+            display: flex; }
+    
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+
+  <link rel="shortcut icon" href="//#" />
+  <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script type="text/javascript" src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+  <div id="capture">
+    <div class="jobs-panel">
+
+  <button class="modal-button" data-toggle="modal" data-target="#myModal2">MODAL BUTTON</button>
+
+      <div class="tabwidth">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'Pikachu')" id="defaultOpen">Pikachu</button>
+        </div>
+
+        <div id="Pikachu" class="tabcontent">
+          <img src="https://s22.postimg.cc/l2txqenox/Pikachu.png" width="300" height="300" crossorigin>
+        </div>
+
+        <div id="Paris" class="tabcontent">
+          <h3>Paris</h3>
+          <p>Paris is the capital of France.</p>
+        </div>
+
+        <div id="Tokyo" class="tabcontent">
+          <h3>Tokyo</h3>
+          <p>Tokyo is the capital of Japan.</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="myModal2" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title center">FAQ</h2>
+          </div>
+          <div class="modal-body">
+            <div class="central">
+              <h3 class="bold-text ">QUESTIONS
+              </h3>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <button id="match-button" onclick="sendData();">capture</button>
+  <a id="test" href="#"></a>
+
+
+
+<script>
+function sendData() {
+/*  var modalButton = $('[data-target="#myModal2"]')[0];
+  modalButton.click();
+  var modal = $('#myModal2')[0];
+  */
+  setTimeout(function() {
+    html2canvas(document.getElementById('capture'), {
+      allowTaint: false,
+      useCORS: true
+    }).then(function(canvas) {
+        downloadCanvas(document.getElementById('test'), canvas, 'test.png');
+        modalButton.click();
+    });
+  }, 1000);
+}
+
+/*function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+*/
+function downloadCanvas(link, canvas, filename) {
+    link.href = canvas.toDataURL();
+    link.download = filename;
+    link.click();
+}
+
+document.getElementById("defaultOpen").click();
+
+</script>
+
+
+</body>
+
+</html>

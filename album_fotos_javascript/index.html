@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="https://www.fraldassapeka.com.br/desafiosapeka/pagina1/video2.png" />
+    <meta property="og:image:url" content="https://www.fraldassapeka.com.br/desafiosapeka/pagina1/video2.png">
+    <meta property="og:image:type"       content="image/png">
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Desafio Sapeka" />
+    <meta property="og:url" content="https://www.fraldassapeka.com.br/desafiosapeka" />
+    <meta property="og:site_name" content="Desafio Sapeka" />
+    <meta property="og:description" content="Crie o álbum de fotos do seu sapekinha" />
+    
+    <title>Desafio Sapeka - Crie um álbum de fotos do seu sapekinha.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+           
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-125060431-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-125060431-1');
+</script>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            
+            <div class="col-12">
+              <a href="index.html"><img class="mx-auto d-block topo" src="imagens/sapeka.png"></a><br>
+                          
+               <p class="text-center titulo"><b>Como</b></p>
+               <p class="text-center subtitulo2"><b>funciona?</b></p>
+                            
+            </div>
+            
+            <div class="col-12"><br>
+                  <div id="ytplayer" class="mx-auto d-block" style="margin-top: 120px;"></div>
+            </div>
+         
+
+        </div><!--fim de row-->
+<br>
+
+       <div class="row descricao">
+            
+            <div class="col-4">
+                    <img class="numero" src="pagina1/1.png" align="left"></div>
+                    <div class="col-8">    
+                       <p class="imgnumero"><b>Escolha um desafio de acordo com a idade do seu sapekinha.</b></p>
+            </div>
+            <div class="col-4">
+                    <img class="numero" src="pagina1/2.png" align="left"></div>
+                        <div class="col-8">   
+                        <p class="imgnumero"><b>Tire as fotos do seu pequeno realizando as atividades propostas.</b>
+                        </p>
+            </div>
+            <div class="col-4">
+                    <img class="numero" src="pagina1/3.png" align="left"></div>
+                    <div class="col-8">       
+                    <p class="imgnumero"><b>Coloque as fotos nos devidos lugares e monte seu álbum.</b></p>
+            </div>
+        
+            <div class="col-12">
+                <a href="escolherdesafio.html"><img class="mx-auto d-block btnparticiparhome" src="pagina1/botparticipar.png"></a>
+            </div>
+        </div><!--fim de row-->
+
+    </div>
+
+   
+
+<script>
+
+    //API YOUTUBE::
+    
+  // Load the IFrame Player API code asynchronously.
+  var tag = document.createElement('script');
+  tag.src = "https://www.youtube.com/player_api";
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  // Replace the 'ytplayer' element with an <iframe> and
+  // YouTube player after the API code downloads.
+  var player;
+  if (screen.width>=800){
+  function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '360',
+      width: '640',
+      videoId: 'OiG1rWN8yNQ',
+      playerVars: { 'autoplay': 1, 'controls': 0 ,'loop': 1, 'rel': 0},
+    });
+  }
+  }else{
+    function onYouTubePlayerAPIReady() {
+    player = new YT.Player('ytplayer', {
+      height: '460',
+      width: '260',
+      videoId: 'MDQEy7ZIgH0',
+      playerVars: { 'autoplay': 1, 'controls': 0 ,'loop': 1, 'rel': 0},
+    });
+  }
+  }
+
+          
+</script>
+  
+</body>
+</html>

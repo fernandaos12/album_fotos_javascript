@@ -1,0 +1,227 @@
+@media (max-width:360px){
+    .social {
+        margin-left: 31px;
+    }
+    .imagebg3 {
+        margin-top: 3px !important;
+    }
+    .imagebg4 {
+        margin-top: 8px !important;
+    }
+    .moldura1 img {
+        max-width: 170px;
+        height: 170px;
+        z-index: 2000;
+        margin-top: -174px;
+        margin-left: -5px;
+    }
+    .moldura2 img {
+        max-width: 170px;
+        height: 170px;
+        z-index: 2000;
+        position: absolute;
+        margin-left: 10px;
+        margin-top: -157px;
+    }
+    .moldura3 img {
+        max-width: 170px;
+        height: 170px;
+        z-index: 2000;
+        position: absolute;
+        margin-top: -160px;
+        margin-left: 1px;
+    }
+    .moldura4 img {
+        max-width: 170px;
+        height: 170px;
+        z-index: 2000;
+        position: absolute;
+        margin-top: -164px;
+        margin-left: 8px;
+    }
+    .moldura11 img {
+        max-width: 170px;
+        height: 170px;
+        z-index: 2000;
+        margin-top: -174px;
+        margin-left: 4px;
+    }
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width:361px) and (max-width: 812px) {
+    .moldura1 img {
+        max-width: 190px;
+        height: 190px;
+        z-index: 2000;
+        margin-top: -177px;
+        margin-left: -13px;
+    }
+    .moldura11 img {
+        max-width: 190px;
+        height: 190px;
+        z-index: 2000;
+        margin-top: -182px;
+        margin-left: -7px;
+    }
+    .moldura2 img {
+        max-width: 190px;
+        height: 190px;
+        z-index: 2000;
+        position: absolute;
+        margin-left: -6px;
+        margin-top: -172px;
+    }
+    .moldura3 img {
+        max-width: 190px;
+        height: 190px;
+        z-index: 2000;
+        position: absolute;
+        margin-top: -167px;
+        margin-left: -8px;
+    }
+    .moldura4 img {
+        max-width: 190px;
+        height: 190px;
+        z-index: 2000;
+        position: absolute;
+        margin-top: -170px;
+        margin-left: -4px;
+    }
+    
+
+ /*   .moldura1 img{
+        max-width: 180px;
+    height: 243px;
+    position: absolute;
+    z-index: 2000;
+    margin-top: -199px;
+    margin-left: -3px;
+    }
+    
+    .moldura2 img{
+        max-width: 178px;
+    height: 243px;
+    z-index: 2000;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: -198px;
+    }
+    
+    .moldura3 img{
+        max-width: 180px;
+        height: 243px;
+        z-index: 2000;
+        position: absolute;
+        margin-top: -199px;
+        margin-left: 0px;
+    }
+
+    .moldura4 img{
+        max-width: 187px;
+    height: 243px;
+    z-index: 2000;
+    position: absolute;
+    margin-top: -199px;
+    margin-left: -5px;
+    }*/
+
+    
+}
+/* Telefones em paisagem a tablet em retrato */
+@media (min-width:600px) and (max-width: 768px) {
+  .moldura1 img{
+        max-width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: 2000;
+        margin-top: -283px;
+        margin-left: 26px;
+    }
+    .moldura11 img{
+        max-width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: 2000;
+        margin-top: -283px;
+        margin-left: 39px;
+    }
+    
+    .moldura2 img{
+        max-width: 300px;
+    height: 300px;
+    z-index: 2000;
+    position: absolute;
+    /*margin-left: 122px;*/
+    margin-left: 42px;
+    margin-top: -284px;
+    }
+    
+    .moldura3 img{
+        max-width: 300px;
+        height: 300px;
+        z-index: 2000;
+        position: absolute;
+        margin-top: -286px;
+        /*margin-left: 117px;*/
+        margin-left: 37px;
+    }
+
+    .moldura4 img{
+        max-width: 300px;
+    height: 300px;
+    z-index: 2000;
+    position: absolute;
+    margin-top: -280px;
+    margin-left: 40px;
+    }
+
+    
+}
+
+/* Tablet em retrato a paisagem e desktop */
+@media (min-width: 1024px){
+    .moldura1 img{
+        max-width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: 2000;
+        margin-top: -287px;
+        margin-left: 107px;
+    }
+    .moldura11 img {
+        max-width: 300px;
+        height: 300px;
+        position: absolute;
+        z-index: 2000;
+        margin-top: -287px;
+        margin-left: 119px;
+    }
+    
+    .moldura2 img{
+        max-width: 300px;
+    height: 300px;
+    z-index: 2000;
+    position: absolute;
+    margin-left: 117px;
+    margin-top: -287px;
+    }
+    
+    .moldura3 img{
+        max-width: 300px;
+        height: 300px;
+        z-index: 2000;
+        position: absolute;
+        margin-top: -286px;
+        margin-left: 113px;
+    }
+
+    .moldura4 img{
+        max-width: 300px;
+    height: 300px;
+    z-index: 2000;
+    position: absolute;
+    margin-top: -284px;
+    margin-left: 120px;
+    }
+}
